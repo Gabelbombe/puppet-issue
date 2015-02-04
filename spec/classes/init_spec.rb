@@ -36,4 +36,21 @@ describe 'issue' do
       end
     end
   end
+
+  ensure_hash = {
+    'issue_ensure'  => {
+      :name => 'issue',
+      :path => '/etc/issue',
+    }
+  }
+
+  ensure_hash.sort.each do |param, chunk|
+    describe "with parameter #{param}" do
+      ['file', 'present', 'absent'].each do |value|
+
+        ## .......
+
+      end
+    end
+  end
 end
