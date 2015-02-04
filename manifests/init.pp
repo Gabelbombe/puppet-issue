@@ -1,6 +1,7 @@
 # == Class: issue
 #
 # This module manages /etc/issue
+# requires: stdlib::validate_re()
 #
 
 class issue (
@@ -9,7 +10,11 @@ class issue (
   $issue_owner    = 'root',
   $issue_group    = 'root',
   $issue_mode     = '0644',
-  $issue_content  = indef,
+  $issue_content  = undef,
 ) {
-  ## ....
+  validate_re($issue_ensure, '^(file|present|absent)', 'vim::issue_ensure does not match regexp. Must be "file", "present" or "absent"')
+
+  validate_absolute_path($issue_file)
+
+  validate_re($issue_mode, '^\d{4}$', 'vim::issue_mode does not match regexp. Must be four digit string.')
 }
