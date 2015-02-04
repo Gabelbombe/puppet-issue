@@ -7,3 +7,8 @@ PuppetLint.configuration.ignore_paths = [
   "spec/**/*.pp",
   "pkg/**/*.pp",
 ]
+
+desc 'Run Puppet in noop, check for syntax errors.'
+task :validate do
+
+end
