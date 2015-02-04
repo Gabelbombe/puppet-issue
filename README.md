@@ -21,9 +21,3 @@ Module to manage /etc/issue
  - issue_content
    - Content of issue file
    - _Default: undef_
-
-
-### Todo
- - Build
- - Test
- - Different OS's
