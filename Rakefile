@@ -10,5 +10,7 @@ PuppetLint.configuration.ignore_paths = [
 
 desc 'Run Puppet in noop, check for syntax errors.'
 task :validate do
-
+  Dir['manifests/**/*.pp'].each do |manifest|
+    sh "puppet parser validate --noop #{manifest}"
+  end
 end
