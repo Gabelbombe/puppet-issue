@@ -1,4 +1,4 @@
-# ISSUES
+### Issues
 Module to manage /etc/issue
 
 
@@ -23,7 +23,7 @@ Module to manage /etc/issue
    - _Default: undef_
 
 
-### TODO
+### Todo
  - Build
  - Test
  - Different OS's

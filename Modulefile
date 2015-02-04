@@ -1,0 +1,10 @@
+name 'jdaniel-issues'
+version '0.0.1'
+source 'git@git.internal.t-mobile.com:jdaniel56/puppet-issue.git'
+author 'Jd Daniel'
+license 'Apache License, Version 2.0'
+summary 'Manage Issue'
+description 'Manage /etc/issue file(s)'
+project_page 'https://git.internal.t-mobile.com/jdaniel56/puppet-issue/'
+
+dependency 'puppetlabs/stdlib'
